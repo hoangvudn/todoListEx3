@@ -1,0 +1,98 @@
+.blockNewTask {
+    
+    width: 350px;
+    margin: 0 auto;
+    position: relative;
+    top: 50px;
+    left: 80px;
+    &__inputData {
+        display: flex;
+        flex-direction: column;
+    }
+    &__itemList {
+        margin-bottom: 20px;
+        input {
+            border-top: none;
+            border-right: none;
+            border-left: none;
+        }
+    }
+    &__inputTitle {
+        margin-left: 65px;
+    }
+    &__inputCreator {
+        margin-left: 46px;
+    }
+    &__inputDescription {
+        margin-left: 20px;
+    }
+    &__buttonAddToDo {
+       position: relative;
+       cursor: pointer;
+       left: 120px;
+       border: 1px solid greenyellow;
+       width: 80px;
+       height: 30px;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       background: blueviolet;
+       color: white;
+       border-radius: 5px;
+    }
+}
+.sideBar {
+    position: absolute;
+    border: 1px solid red;
+    width: 100px;
+    height: 200px;
+    left: 416px;
+    list-style-type: none;
+    background: orange;
+}
+.blockItemTaskList {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+  
+    left: 550px;
+    width: 35%;
+    height: 200px;
+    border: 1px solid purple;
+    list-style-type: none;
+    border-radius: 5px;
+    &__itemTaskList {
+        display: flex;
+        flex-direction: column;
+        border: 1px solid blue;
+        width: 150px;
+        height: 100px;
+        border-radius: 5px;
+        margin-left: 10px;
+        margin-top: 8px;
+    }
+}
+.blockSearchToDo {
+    position: relative;
+    display: flex;
+    left: 550px;
+    &__inputTitle {
+        width: 200px;
+        height: 25px;
+    }   
+    &__buttonSearchToDo {
+        cursor: pointer;
+       left: 120px;
+       border: 1px solid greenyellow;
+       width: 80px;
+       height: 30px;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       background: blueviolet;
+       color: white;
+       border-radius: 5px;
+       margin-left: 10px;
+    }
+}
+
