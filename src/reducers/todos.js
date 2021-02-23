@@ -13,18 +13,27 @@ const todos = (state = [], action) => {
         }
       ]
     case 'SEARCH_TODO':
-      const newArray = [];
-      return state.map(todo =>
+      const newArray = [...state];
+      /*return state.map(todo =>
         (todo.textTitle === action.textTitle)
           ? {...todo, textTitle: !todo.textTitle}
           : todo
-        )
+        )*/
+        return newArray.filter(todo => todo.textTitle == action.textTitle);
     case 'TOGGLE_TODO':
+      // return {
+      //   allTask: allTask,
+      //   searchResult: allTask.map(todo =>
+      //     (todo.id === action.id)
+      //       ? {...todo, completed: !todo.completed}
+      //       : todo
+      //   )
+      // }
       return state.map(todo =>
         (todo.id === action.id)
           ? {...todo, completed: !todo.completed}
-          : todo
-      )
+           : todo
+       )
     case 'DELETE_TODO':
       // const arrList = [...state];
       // const indexTask = arrList.findIndex(item => item.id === action.id)
