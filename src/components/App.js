@@ -3,6 +3,7 @@ import Footer from './Footer'
 import AddTodo from '../containers/AddTodo'
 import VisibleTodoList from '../containers/VisibleTodoList'
 import SearchTodo from '../containers/SearchTodo'
+import MyComponent from '../component/TestAjax'
 import {
   BrowserRouter as Router,
   Switch,
@@ -20,16 +21,17 @@ const App = () => (
    <Router>
       <div>
          <SearchTodo />
+         <MyComponent style={{ width:'200px', height:'100px'}}/>
         <ul className="sideBar"> 
            <li className="sideBar__topLeft">
              <Link to="/AddTodo"> Creat New Task </Link>
            </li>
-           <li>
+           <li className="sideBar__topLeft">
              <Link to="/VisibleTodoList"> All Task </Link>
            </li>
-           <li>
+           {/*<li className="sideBar__topLeft">
              <Link to="/Footer"> Footer </Link>
-           </li>
+            </li>*/}
         </ul>
          
         <Switch>

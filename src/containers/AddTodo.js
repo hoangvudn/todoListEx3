@@ -2,6 +2,7 @@ import React from 'react'
 import { connect } from 'react-redux'
 import { addTodo } from '../actions'
 import '../styles/index.scss'
+import '../styles/reponsive.scss'
 
 const AddTodo = ({ dispatch }) => {
   let inputTitle

@@ -44,24 +44,35 @@
 .sideBar {
     position: absolute;
     border: 1px solid red;
-    width: 100px;
-    height: 200px;
-    left: 416px;
+    width: 120px;
+    height: 500px;
+    left: 395px;
     list-style-type: none;
     background: orange;
+    &__topLeft {
+        margin-top: 10px;
+        margin-left: -37px;
+        border-bottom: 1px solid white;
+    }
+    &__topLeft a {
+        position: relative;
+        text-decoration: none;
+        margin-right: 2px;
+    }
 }
 .blockItemTaskList {
     position: relative;
     display: flex;
     flex-direction: row;
-  
+    flex-wrap: wrap;
     left: 550px;
-    width: 35%;
-    height: 200px;
+    width: 45%;
+    height: 500px;
     border: 1px solid purple;
     list-style-type: none;
     border-radius: 5px;
     &__itemTaskList {
+        position: relative;
         display: flex;
         flex-direction: column;
         border: 1px solid blue;

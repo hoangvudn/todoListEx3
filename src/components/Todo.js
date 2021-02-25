@@ -1,18 +1,17 @@
 import React, { useState } from 'react'
 import PropTypes from 'prop-types'
-
+import AddTodo from '../containers/AddTodo'
 // function IsEditing() {
 //   const [isEditing, setEditing] = useState(false);
 // }
 const Todo = ({ onClick, handleDeleteTask, handleEditTask, textInput, completed, textTitle, textCreator, textDescription, status }) => ( 
     <div >
       <li 
-          onClick={onClick}
-          style={{
+          onClick={onClick} 
+          /*style={{
             textDecoration: completed ? 'line-through' : 'none'
-          }}
+          }}*/
       >
-       
            <div className="blockItemTaskList__itemTaskList">
               <span> Title: {textTitle} </span> 
               <span> Creator: {textCreator} </span>
