@@ -19,7 +19,7 @@ const todos = (state = [], action) => {
           ? {...todo, textTitle: !todo.textTitle}
           : todo
         )*/
-        return newArray.filter(todo => todo.textTitle == action.textTitle);
+       return newArray.filter(todo => todo.textTitle === action.textTitle);
     case 'TOGGLE_TODO':
       // return {
       //   allTask: allTask,

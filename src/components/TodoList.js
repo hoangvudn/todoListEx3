@@ -10,7 +10,7 @@ const TodoList = ({ todos, toggleTodo, removeTodo, editTodo }) => (
         {...todo}
         onClick={() => toggleTodo(todo.id)}
         handleDeleteTask={() => removeTodo(todo.id)}
-        handleEditTask={() => editTodo(todo.text)}
+        handleEditTask={() => editTodo(todo.id,todo.text)}
       />
     )}
   </ul>

@@ -15,7 +15,7 @@ function App() {
     <div className="App">
       <h2>Use refs to control focus</h2>
       <input ref={inputEl} />
-      <input ref2={inputEl1} />
+      <input ref={inputEl1} />
 
       <button onClick={onButtonClick}>Focus the input</button>
     </div>
